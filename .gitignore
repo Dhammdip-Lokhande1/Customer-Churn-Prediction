@@ -27,13 +27,15 @@ env.bak/
 venv.bak/
 
 # ─── Data Files ─────────────────────────────────────────────
-# Raw and processed data should NOT be committed to version control
-data/raw/
-data/processed/
+# Raw CSV and processed pickle are committed for Streamlit Cloud deployment
+# (all files are < 1 MB — well within GitHub limits)
+# data/raw/
+# data/processed/
 
 # ─── Trained Model Artifacts ────────────────────────────────
-# Serialised model binaries are large; regenerate with src/train.py
-models/*.pkl
+# Model artifacts are committed for Streamlit Cloud deployment (~470 KB total)
+# Regenerate locally with: python src/train.py
+# models/*.pkl
 
 # ─── Jupyter / IPython ──────────────────────────────────────
 .ipynb_checkpoints/
