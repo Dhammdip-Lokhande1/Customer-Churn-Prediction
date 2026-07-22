@@ -5,12 +5,18 @@
 </p>
 
 <p align="center">
+  <a href="https://churnsight-dashboard.streamlit.app/"><img src="https://img.shields.io/badge/Live%20Demo-Streamlit%20Cloud-FF4B4B?style=for-the-badge&logo=streamlit" alt="Live Demo"/></a>
+</p>
+
+<p align="center">
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-6C63FF.svg" alt="MIT License"/></a>
   <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/Python-3.9%2B-2DD4BF.svg" alt="Python 3.9+"/></a>
   <a href="https://xgboost.readthedocs.io/"><img src="https://img.shields.io/badge/Model-XGBoost-FFA62B.svg" alt="XGBoost"/></a>
   <a href="https://shap.readthedocs.io/"><img src="https://img.shields.io/badge/Explainability-SHAP-FF4B4B.svg" alt="SHAP"/></a>
   <a href="https://streamlit.io/"><img src="https://img.shields.io/badge/Dashboard-Streamlit-FF4B4B.svg" alt="Streamlit"/></a>
 </p>
+
+> 🌐 **Live Demo**: Access the interactive dashboard online at **[https://churnsight-dashboard.streamlit.app/](https://churnsight-dashboard.streamlit.app/)**
 
 > **ChurnSight** is an end-to-end Machine Learning portfolio project that predicts subscription customer churn and explains *why* using SHAP (SHapley Additive exPlanations). Built with **XGBoost** and **Streamlit**, it gives business analysts and decision-makers actionable, interpretable retention insights.
 
@@ -20,6 +26,7 @@
 
 | Feature | Description |
 |---|---|
+| 🌐 **Live Web Application** | Deployed on Streamlit Community Cloud for instant access |
 | 🔮 **Real-time Predictions** | Batch churn probability scores for all customers |
 | 🧬 **SHAP Explainability** | Global beeswarm + per-customer waterfall plots |
 | 🔍 **Customer Detail Drill-down** | SHAP attribution for any individual customer |
@@ -31,17 +38,23 @@
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### Option A — Try Online Instantly (No Setup)
+
+Visit the deployed app directly: 👉 **[https://churnsight-dashboard.streamlit.app/](https://churnsight-dashboard.streamlit.app/)**
+
+### Option B — Run Locally
+
+#### Prerequisites
 
 - Python 3.9 or later
 - pip
 
-### Installation
+#### Installation
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/Dhammdip-Lokhande/Customer-Churn-Prediction-SHAP.git
-cd Customer-Churn-Prediction-SHAP
+git clone https://github.com/Dhammdip-Lokhande1/Customer-Churn-Prediction.git
+cd Customer-Churn-Prediction
 
 # 2. (Recommended) Create and activate a virtual environment
 python -m venv .venv

@@ -44,9 +44,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Dhammdip-Lokhande/Customer-Churn-Prediction-SHAP"
-Repository = "https://github.com/Dhammdip-Lokhande/Customer-Churn-Prediction-SHAP"
-"Bug Tracker" = "https://github.com/Dhammdip-Lokhande/Customer-Churn-Prediction-SHAP/issues"
+Homepage = "https://churnsight-dashboard.streamlit.app/"
+Repository = "https://github.com/Dhammdip-Lokhande1/Customer-Churn-Prediction"
+"Bug Tracker" = "https://github.com/Dhammdip-Lokhande1/Customer-Churn-Prediction/issues"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
