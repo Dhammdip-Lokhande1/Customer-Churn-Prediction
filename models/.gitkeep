@@ -1,0 +1,4 @@
+# This file intentionally left empty.
+# It ensures the models/ directory is tracked by Git.
+# Model artifacts (.pkl files) are NOT committed (see .gitignore).
+# To generate them, run: python src/train.py

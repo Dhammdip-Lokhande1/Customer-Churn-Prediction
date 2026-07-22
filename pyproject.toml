@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "churnsight"
+version = "1.0.0"
+description = "AI-powered customer churn prediction dashboard with SHAP explainability"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Dhammdip Lokhande", email = "dhammdiplokhande1@gmail.com" }
+]
+requires-python = ">=3.9"
+keywords = ["machine-learning", "xgboost", "shap", "streamlit", "churn-prediction"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "xgboost>=1.7.0",
+    "lightgbm>=3.3.0",
+    "shap>=0.42.0",
+    "streamlit>=1.28.0",
+    "plotly>=5.17.0",
+    "pandas>=2.0.0",
+    "scikit-learn>=1.3.0",
+    "joblib>=1.3.0",
+    "seaborn>=0.12.0",
+    "matplotlib>=3.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Dhammdip-Lokhande/Customer-Churn-Prediction-SHAP"
+Repository = "https://github.com/Dhammdip-Lokhande/Customer-Churn-Prediction-SHAP"
+"Bug Tracker" = "https://github.com/Dhammdip-Lokhande/Customer-Churn-Prediction-SHAP/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*", "app*"]
